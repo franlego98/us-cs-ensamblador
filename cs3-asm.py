@@ -5,7 +5,7 @@ académico Computador Simple 3
 Desarrollado por Francisco Sánchez López 
 bajo la licencia GNU Public License v3
 
-2018 - Universad de Sevilla
+2018 - Universiad de Sevilla
 
 Versión 1.0b
 '''
