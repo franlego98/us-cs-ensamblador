@@ -5,7 +5,7 @@ académico Computador Simple 3
 Desarrollado por Francisco Sánchez López 
 bajo la licencia GNU Public License v3
 
-2018 - Universiad de Sevilla
+2018 - Universad de Sevilla
 
 Versión 1.0b
 '''
@@ -36,21 +36,6 @@ def leer_archivo(ruta):
 		print(e)
 		exit(1)
 	return lineas
-	
-def coger_lineas(ruta):
-	salida = []
-	contador_lineas = 0
-	for linea in leer_archivo(ruta):
-		if linea != None:
-			if linea[0] != '.equ':
-				if linea[0] == '.include':
-					salida+=coger_lineas(linea[1])
-				else:
-					if linea[0][-1] == ':':
-						salida.append(linea[1:])
-					else:
-						salida.append(linea)
-	return salida
 	
 #comprueba que el dato es valido para el computador y lo pasa a bin desde dec o hex
 #si no es valido, devuelve None. El valor no puede se mayor que 0xff,256 o 0b1111111
